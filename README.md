@@ -9,3 +9,4 @@
 * Extending the limits of minecraft's default enchantments
 * Special items for generating biomes
 * Special items for generating structures
+* Compatibility for JEI
