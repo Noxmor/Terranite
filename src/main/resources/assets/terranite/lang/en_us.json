@@ -1,3 +1,6 @@
 {
-  "creativetab.terranite_tab": "Terranite"
+  "creativetab.terranite_tab": "Terranite",
+
+  "item.terranite.horse_armor_base": "Horse Armor Base",
+  "item.terranite.netherite_horse_armor": "Netherite Horse Armor"
 }
