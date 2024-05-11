@@ -20,7 +20,8 @@ public class ModCreativeModeTabs
                     .icon(() -> new ItemStack(Items.GRASS_BLOCK))
                     .title(Component.translatable("creativetab.terranite_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(Items.DIAMOND);
+                        pOutput.accept(ModItems.HORSE_ARMOR_BASE.get());
+                        pOutput.accept(ModItems.NETHERITE_HORSE_ARMOR.get());
                     })
                     .build());
 
