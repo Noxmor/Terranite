@@ -19,17 +19,13 @@ public class Config
 {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
-    private static final ForgeConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
-            .comment("Whether to log the dirt block on common setup")
-            .define("logDirtBlock", true);
+    private static final ForgeConfigSpec.BooleanValue DISABLE_CREEPER_EXPLOSIONS = BUILDER
+            .comment("Disables explosions from creepers")
+            .define("disableCreeperExplosions", false);
 
-    private static final ForgeConfigSpec.IntValue MAGIC_NUMBER = BUILDER
-            .comment("A magic number")
-            .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
-
-    public static final ForgeConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
-            .comment("What you want the introduction message to be for the magic number")
-            .define("magicNumberIntroduction", "The magic number is... ");
+    private static final ForgeConfigSpec.BooleanValue DISABLE_ENDERMAN_BLOCK_PICKUP = BUILDER
+            .comment("Disables block pickups from endermans")
+            .define("disableEnderManBlockPickup", false);
 
     // a list of strings that are treated as resource locations for items
     private static final ForgeConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
@@ -38,9 +34,10 @@ public class Config
 
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
-    public static boolean logDirtBlock;
-    public static int magicNumber;
-    public static String magicNumberIntroduction;
+    public static boolean disableCreeperExplosions;
+
+    public static boolean disableEnderManBlockPickup;
+
     public static Set<Item> items;
 
     private static boolean validateItemName(final Object obj)
@@ -51,9 +48,8 @@ public class Config
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
-        logDirtBlock = LOG_DIRT_BLOCK.get();
-        magicNumber = MAGIC_NUMBER.get();
-        magicNumberIntroduction = MAGIC_NUMBER_INTRODUCTION.get();
+        disableCreeperExplosions = DISABLE_CREEPER_EXPLOSIONS.get();
+        disableEnderManBlockPickup = DISABLE_ENDERMAN_BLOCK_PICKUP.get();
 
         // convert the list of strings into a set of items
         items = ITEM_STRINGS.get().stream()
