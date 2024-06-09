@@ -1,10 +1,7 @@
 package com.noxmor.terranite.item;
 
 import com.noxmor.terranite.Terranite;
-import net.minecraft.world.item.AnimalArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,6 +16,25 @@ public class ModItems
 
     public static final RegistryObject<Item> NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor",
             () -> new AnimalArmorItem(ArmorMaterials.NETHERITE, AnimalArmorItem.BodyType.EQUESTRIAN, false,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TERRANITE_INGOT = ITEMS.register("terranite_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TERRANITE_HELMET = ITEMS.register("terranite_helmet",
+            () -> new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.HELMET,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TERRANITE_CHESTPLATE = ITEMS.register("terranite_chestplate",
+            () -> new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TERRANITE_LEGGINGS = ITEMS.register("terranite_leggings",
+            () -> new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TERRANITE_BOOTS = ITEMS.register("terranite_boots",
+            () -> new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS,
                     new Item.Properties().stacksTo(1)));
 
     public static void register(final IEventBus eventBus)

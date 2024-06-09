@@ -22,6 +22,11 @@ public class ModCreativeModeTabs
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.HORSE_ARMOR_BASE.get());
                         pOutput.accept(ModItems.NETHERITE_HORSE_ARMOR.get());
+                        pOutput.accept(ModItems.TERRANITE_INGOT.get());
+                        pOutput.accept(ModItems.TERRANITE_HELMET.get());
+                        pOutput.accept(ModItems.TERRANITE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.TERRANITE_LEGGINGS.get());
+                        pOutput.accept(ModItems.TERRANITE_BOOTS.get());
                     })
                     .build());
 

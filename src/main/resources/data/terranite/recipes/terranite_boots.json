@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern":
+  [
+    "T T",
+    "T T",
+    "   "
+  ],
+  "key":
+  {
+    "T":
+    {
+      "item": "terranite:terranite_ingot"
+    }
+  },
+  "result":
+  {
+    "id": "terranite:terranite_boots"
+  }
+}
