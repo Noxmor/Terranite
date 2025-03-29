@@ -1,6 +1,7 @@
 package com.noxmor.terranite;
 
 import com.mojang.logging.LogUtils;
+import com.noxmor.terranite.enchantment.ModEnchantments;
 import com.noxmor.terranite.item.ModCreativeModeTabs;
 import com.noxmor.terranite.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,7 @@ public class Terranite
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModEnchantments.register(modEventBus);
         ModItems.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);

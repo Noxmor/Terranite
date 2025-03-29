@@ -8,5 +8,7 @@
   "item.terranite.terranite_helmet": "Terranite Helmet",
   "item.terranite.terranite_chestplate": "Terranite Chestplate",
   "item.terranite.terranite_leggings": "Terranite Leggings",
-  "item.terranite.terranite_boots": "Terranite Boots"
+  "item.terranite.terranite_boots": "Terranite Boots",
+
+  "enchantment.terranite.fly": "Fly"
 }

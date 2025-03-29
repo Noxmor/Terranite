@@ -1,11 +1,14 @@
 package com.noxmor.terranite.item;
 
 import com.noxmor.terranite.Terranite;
+import com.noxmor.terranite.enchantment.ModEnchantments;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.EnchantedBookItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -27,6 +30,7 @@ public class ModCreativeModeTabs
                         pOutput.accept(ModItems.TERRANITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.TERRANITE_LEGGINGS.get());
                         pOutput.accept(ModItems.TERRANITE_BOOTS.get());
+                        pOutput.accept(EnchantedBookItem.createForEnchantment(new EnchantmentInstance(ModEnchantments.FLY_ENCHANTMENT.get(), 1)));
                     })
                     .build());
 
