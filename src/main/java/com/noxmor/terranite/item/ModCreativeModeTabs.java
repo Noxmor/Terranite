@@ -30,6 +30,11 @@ public class ModCreativeModeTabs
                         pOutput.accept(ModItems.TERRANITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.TERRANITE_LEGGINGS.get());
                         pOutput.accept(ModItems.TERRANITE_BOOTS.get());
+                        pOutput.accept(ModItems.TERRANITE_SWORD.get());
+                        pOutput.accept(ModItems.TERRANITE_PICKAXE.get());
+                        pOutput.accept(ModItems.TERRANITE_SHOVEL.get());
+                        pOutput.accept(ModItems.TERRANITE_AXE.get());
+                        pOutput.accept(ModItems.TERRANITE_HOE.get());
                         pOutput.accept(EnchantedBookItem.createForEnchantment(new EnchantmentInstance(ModEnchantments.FLY_ENCHANTMENT.get(), 1)));
                     })
                     .build());
