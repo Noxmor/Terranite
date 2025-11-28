@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "natural_blocks",
+    "ingredients":
+    [
+        "minecraft:birch_sapling"
+    ],
+    "result":
+    {
+        "id": "minecraft:birch_leaves",
+        "count": 4
+    }
+}

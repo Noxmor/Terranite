@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[10,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "terranite"
+version = "${version}"
+displayName = "Terranite"
+authors = "Noxmor"
+description = '''
+An enhanced minecraft experience in a world of eternity.
+'''
+#logoFile = ""
+
+[[dependencies.terranite]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.10,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.terranite]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.10,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.terranite]]
+modId = "architectury"
+type = "required"
+versionRange = "[18.0.6,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "terranite.mixins.json"

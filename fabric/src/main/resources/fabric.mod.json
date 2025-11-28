@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "terranite",
+  "version": "${version}",
+  "name": "Terranite",
+  "description": "An enhanced minecraft experience in a world of eternity.",
+  "authors": [
+    "Noxmor"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/terranite/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.noxmor.fabric.TerraniteFabric"
+    ],
+    "client": [
+      "com.noxmor.fabric.client.TerraniteFabricClient"
+    ]
+  },
+  "mixins": [
+    "terranite.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "architectury": ">=18.0.6",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

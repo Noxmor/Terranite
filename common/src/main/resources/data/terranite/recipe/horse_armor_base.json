@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "combat",
+    "pattern":
+    [
+        " L ",
+        "LSL",
+        " L "
+    ],
+    "key":
+    {
+        "S": "minecraft:stick",
+        "L": "minecraft:leather"
+    },
+    "result":
+    {
+        "id": "terranite:horse_armor_base"
+    }
+}

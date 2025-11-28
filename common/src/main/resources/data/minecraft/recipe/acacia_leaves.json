@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "natural_blocks",
+    "ingredients":
+    [
+        "minecraft:acacia_sapling"
+    ],
+    "result":
+    {
+        "id": "minecraft:acacia_leaves",
+        "count": 4
+    }
+}

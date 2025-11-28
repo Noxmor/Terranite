@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "combat",
+    "pattern":
+    [
+        "###",
+        "#B#",
+        "###"
+    ],
+    "key":
+    {
+        "B": "terranite:horse_armor_base",
+        "#": "minecraft:leather"
+    },
+    "result":
+    {
+        "id": "minecraft:leather_horse_armor"
+    }
+}

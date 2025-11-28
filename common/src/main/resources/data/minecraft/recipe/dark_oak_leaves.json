@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "natural_blocks",
+    "ingredients":
+    [
+        "minecraft:dark_oak_sapling"
+    ],
+    "result":
+    {
+        "id": "minecraft:dark_oak_leaves",
+        "count": 4
+    }
+}

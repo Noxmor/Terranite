@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "natural_blocks",
+    "ingredients":
+    [
+        "minecraft:jungle_sapling"
+    ],
+    "result":
+    {
+        "id": "minecraft:jungle_leaves",
+        "count": 4
+    }
+}

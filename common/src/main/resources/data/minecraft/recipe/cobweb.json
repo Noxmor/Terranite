@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "natural_blocks",
+    "pattern":
+    [
+        " S ",
+        "SBS",
+        " S "
+    ],
+    "key":
+    {
+        "B": "minecraft:slime_ball",
+        "S": "minecraft:string"
+    },
+    "result":
+    {
+        "id": "minecraft:cobweb"
+    }
+}
